@@ -115,11 +115,16 @@ body {
     text-transform: uppercase;
 
 }
-.intro,
+.intro {
+  color: #d1d5da;
+  max-width: 680px;
+  margin: 25px auto;
+  text-align: center;
+}
  .inner {
-    max-width: 680px;
-    text-align: center;
+    max-width: 350px;
     margin: 25px auto;
+    text-align: center;
 }
 /* End Greeting */
 
@@ -233,7 +238,6 @@ h6{
 /*End Sidebar*/
 
 /*Start Form*/
-
 input[type="text"],
 input[type="email"],
 textarea {
@@ -249,10 +253,10 @@ textarea::placeholder {
 
 input[type="submit"], 
 .button {
-    background-color: #eff3f6;
-    background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+    background-color: #d1d5da;
+    background-image: linear-gradient(-180deg, #d1d5da 0%, #eff3f6 90%);
     border: 1px solid rgba(27, 31, 35, 0.2);
-    border-radius: 4px;
+    /* border-radius: 4px; */
     color: #000000 !important;
     font-size: 12px;
     font-weight: bold;
@@ -262,14 +266,12 @@ input[type="submit"],
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
 /*End Form*/
 
 /*Start Kontak Form*/
 .kontak-form div {
     margin: 20px 0;
 }
-
 /*End Kontak Form*/
 
 
@@ -316,6 +318,33 @@ input[type="submit"],
 }
 /* End  Menu Sekunder/Footing*/
 
+/* Start Font Pertanyaan */
+.pertanyaan ol {
+  color: whitesmoke;
+    font-size: 14px;
+}
+/* Font Pertanyaan */
+
+/* Start Font Judul */
+.font-judul h1,h2 {
+  color: whitesmoke;
+}
+/* End Font Judul */
+
+/* Start Tab */
+.tab {
+  padding: 2px 5px; 
+  text-align: center;
+}
+
+.map {
+  margin: 10px auto;
+  overflow: auto;
+  padding: 2px 5px; 
+  width: 100%;
+}
+
+/* End Tab */
 
 /* Start Copyright */
 .copyright{
