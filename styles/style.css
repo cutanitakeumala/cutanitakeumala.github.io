@@ -4,7 +4,7 @@
 
 /* Start Body*/
 body {
-    background-color: gainsboro;
+    background-color: #212121;
     color: #000000;
     font-family: 'Roboto Slab', 'Cochin', Georgia, Times, 'Times New Roman', serif;
     font-size: 16px;
@@ -32,13 +32,21 @@ body {
 }
 /* End Container */
 
+/* Start Container Full*/
+.container-full {
+    margin: 10px auto;
+    overflow: auto;
+    width: 100%;
+}
+/* End Container Full */
+
 /* Start Logo */
 .logo {
-    /* line-height: 0.2em; */
+    line-height: 0.2em;
     margin: 10px auto;
     overflow: auto;
     padding: auto ;
-    text-align: left;
+    text-align: center;
     width: 95%;
 }
 /* End Logo */
@@ -52,11 +60,13 @@ body {
         0 3px 5px -1px rgba(0, 0, 0, 0.2),
         0 6px 10px 0 rgba(0, 0, 0, 0.14),
         0 1px 10px 0 rgba(0, 0, 0, 0.12);
+
 }
 .menu-primer li{
-    border-right: 1px solid #d1d5da ;
+    /* border-right: 1px solid #d1d5da ; */
     display: inline-block;
-    margin: 0 -4px;
+    margin: 0 auto;
+    padding:0 auto;
 }
 
 .menu-primer a{
@@ -79,12 +89,44 @@ body {
     color: white;
     text-decoration: none;
 }
+
 /* End Menu Primer */
+
+/* Start Greeting*/
+.column {
+    display: block;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+}
+
+.q_magnet {
+    display: block;
+    -webkit-transition: all .26s ease-out;
+    transition: all .26s ease-out;
+    will-change: transform;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid white;
+    text-transform: uppercase;
+
+}
+.intro,
+ .inner {
+    max-width: 680px;
+    text-align: center;
+    margin: 25px auto;
+}
+/* End Greeting */
 
 /* Start Anchor/Hyperlink */
 a:link,
 a:visited {
-    color: rgb(190, 188, 188);
+    color: white;
     text-decoration: none;
 }
 
@@ -286,6 +328,98 @@ input[type="submit"],
 }
 /* End  Copyright*/
 
+/*Start Slide Show*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:900);
+
+.snip1481 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 10px;
+  min-width: 23.5%;
+  max-width: 23.5%;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  font-size: 16px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  text-transform: uppercase;
+  box-shadow: none !important;
+}
+.snip1481:first-of-type {
+  margin-left: 10px;
+}
+.snip1481 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1481 .image {
+  padding: 15px 0;
+}
+.snip1481 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+  position: relative;
+  opacity: 0.7;
+}
+.snip1481 figcaption {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #0d0d0d;
+  -webkit-transform: rotate(90deg) translateY(0%);
+  transform: rotate(90deg) translateY(0%);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+}
+.snip1481 h4 {
+  width: 100%;
+  margin: 0;
+  padding: 15px 20px;
+  line-height: 1.1em;
+  font-weight: 900;
+}
+.snip1481 i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 8px 20px;
+  font-size: 26px;
+}
+.snip1481 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.snip1481:hover img,
+.snip1481.hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  opacity: 1;
+}
+.snip1481:hover figcaption,
+.snip1481.hover figcaption {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+  -webkit-transform: rotate(90deg) translateY(-100%);
+  transform: rotate(90deg) translateY(-100%);
+}
+/* Demo purposes only */
+body {
+  background-color: #212121;
+}
+/*End Slide Show*/
 
 /* Start Javascript */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
@@ -294,9 +428,9 @@ input[type="submit"],
   position: relative;
   display: inline-block;
   overflow: hidden;
-  margin: 10px;
-  min-width: 31.5%;
-  max-width: 31.5%;
+  margin: 55px auto;
+  min-width: 100%;
+  max-width: 100%;
   width: 100%;
   color: #000000;
   text-align: center;
@@ -325,8 +459,8 @@ input[type="submit"],
   background-color: #000;
   position: absolute;
   z-index: 1;
-  top: 50%;
-  left: 50%;
+  top: 100%;
+  left: 100%;
   opacity: 0;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -371,7 +505,7 @@ input[type="submit"],
   zoom: 1;
   filter: alpha(opacity=25);
   -webkit-opacity: 0.25;
-  opacity: 0.25;
+  opacity: 0.5;
 }
 
 .snip1572:hover:before,
@@ -397,6 +531,8 @@ input[type="submit"],
   transform: translateY(0%);
   opacity: 1;
 }
+
+
 /* Start Javascript */
 
 /* Start  */
