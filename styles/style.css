@@ -6,12 +6,11 @@
 body {
     background-color: gainsboro;
     color: #000000;
-    font-family: 'Roboto Slab', Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Roboto Slab', 'Cochin', Georgia, Times, 'Times New Roman', serif;
     font-size: 16px;
     font-style: inherit;
     line-height: 1.5em;
     margin: 0;
-    padding;
 }
 /* End Body*/
 
@@ -46,15 +45,16 @@ body {
 
 /* Start Menu Primer */
 .menu-primer ul {
+    text-align: center;
     background-color: #333333;
     border-radius: 4px;
     box-shadow:
         0 3px 5px -1px rgba(0, 0, 0, 0.2),
         0 6px 10px 0 rgba(0, 0, 0, 0.14),
-        0 1px 10px 0 rgba(0, 0, 0, 0.12),
+        0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .menu-primer li{
-    border-right: : 1px solid #d1d5da ;
+    border-right: 1px solid #d1d5da ;
     display: inline-block;
     margin: 0 -4px;
 }
